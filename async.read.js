@@ -3,7 +3,7 @@ const {
   promises: { readFile },
 } = require("fs");
 
-(async function handleCSVRead() {
+(async function handleRead() {
   try {
     const data = await readFile("./data/pulitzer-circulation-data.csv", "utf8");
     const values = convertCsv(data);

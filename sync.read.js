@@ -1,7 +1,7 @@
 const { convertCsv } = require("./csv.parse");
 const { readFileSync } = require("fs");
 
-(function handleCSVReadSync() {
+(function handleReadSync() {
   try {
     const data = readFileSync("./data/pulitzer-circulation-data.csv", "utf8");
     const values = convertCsv(data);
